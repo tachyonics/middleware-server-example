@@ -15,6 +15,8 @@
 // ExampleAsyncHTTP1Server
 //
 
+// Copied from https://github.com/amzn/smoke-framework/tree/v3_poc_2/Sources/SmokeAsyncHTTP1Server
+
 import NIOCore
 
 public enum ResponseBodyLength: Hashable, Sendable {
