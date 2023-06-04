@@ -36,6 +36,9 @@ struct Application {
                 try await stack.handle(request, outputWriter: responseWriter, context: (),
                                        next: Self.handler)
             } catch {
+                // In an actual implementation this would be more complex error handling,
+                // potentially looking at the writer state to determine if an error response
+                // could be sent
                 let logger = Logger(label: "Request")
                 logger.error("Unable to complete request due to \(String(describing: error))")
             }

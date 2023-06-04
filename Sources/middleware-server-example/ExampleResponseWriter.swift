@@ -7,7 +7,7 @@ import NIOHTTP1
 import NIOCore
 
 /**
- For this writer, for each body part recieved, the writer will submit a lowercase version and then an uppercase version
+ For this writer, for each body part received, the writer will submit a lowercase version and then an uppercase version
  */
 struct ExampleResponseWriter<Wrapped: HTTPServerResponseWriterProtocol>: WrappingHTTPServerResponseWriterProtocol {
     let wrapped: Wrapped
